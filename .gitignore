@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+# conversion inputs (download from the Hugging Face hub, see tools/README.md)
+tools/.venv/
+tools/pytorch_model.bin
+tools/*.txt
+tools/tokenizer.json
+tools/tokenizer_config.json
+tools/special_tokens_map.json
+tools/vocab.json

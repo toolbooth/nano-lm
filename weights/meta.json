@@ -1,0 +1,12 @@
+{
+  "model": "roneneldan/TinyStories-1M",
+  "arch": "gpt_neo",
+  "hidden": 64,
+  "layers": 8,
+  "heads": 16,
+  "vocab": 50257,
+  "maxPos": 2048,
+  "lnEps": 1e-05,
+  "activation": "gelu_new",
+  "license": "roneneldan/TinyStories (research release)"
+}

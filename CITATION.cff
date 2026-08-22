@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "nano-lm: an auditable GPT-Neo forward pass in dependency-free TypeScript"
+type: software
+version: 0.1.0
+date-released: 2026-08-22
+authors:
+  - family-names: Shen
+    given-names: Shangyan
+    email: shenshangyan2001@gmail.com
+abstract: >-
+  A hand-written implementation of the GPT-Neo transformer forward pass in
+  plain TypeScript with zero runtime dependencies, bundled with the
+  TinyStories-1M checkpoint (7.5 MB, fp16 safetensors). It exposes every
+  intermediate of the computation — token and position embeddings, the
+  residual stream after each block, per-layer per-head attention weights and
+  next-token logits — and is verified token-exact against the reference
+  Hugging Face implementation (greedy continuation) with logits and attention
+  maps reproduced within fp16 tolerance. Includes cosine nearest-neighbour
+  search over the embedding table, automatic discovery of interpretable
+  attention heads (previous-token, first-token anchor, most diffuse), and
+  top-k / temperature sampling utilities. Extracted from the interactive essay
+  "Inside the Machine", where it powers the in-browser dissection widgets.
+keywords:
+  - large language models
+  - transformers
+  - GPT-Neo
+  - interpretability
+  - TypeScript
+  - in-browser inference
+  - machine learning education
+# TODO before public launch:
+#   - settle the package name (see NAMING.md) and update `title`
+#   - add `repository-code` / `url` once the repo is public
+#   - add `doi` from Zenodo after cutting a release
+#   - add `license` after OSS approval clears
+#   - add `preferred-citation` pointing at the essay's companion paper when it exists

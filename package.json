@@ -1,0 +1,32 @@
+{
+  "name": "nano-lm",
+  "version": "0.1.0",
+  "description": "An auditable GPT-Neo forward pass in dependency-free TypeScript: logits, per-head attention, hidden states and embedding neighbours from a bundled 7.5 MB TinyStories-1M checkpoint, token-exact against the reference implementation.",
+  "author": "Shangyan Shen <shenshangyan2001@gmail.com>",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./weights/tinystories-1m.safetensors": "./weights/tinystories-1m.safetensors",
+    "./weights/meta.json": "./weights/meta.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "weights"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
