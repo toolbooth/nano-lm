@@ -8,5 +8,5 @@
   "maxPos": 2048,
   "lnEps": 1e-05,
   "activation": "gelu_new",
-  "license": "roneneldan/TinyStories (research release)"
+  "license": "UNSPECIFIED UPSTREAM — the roneneldan/TinyStories-1M model card carries no license field (checked 2026-08-22); redistribution permission is being requested from the author. Dataset: CDLA-Sharing-1.0 (whose §3.5 places no obligations on trained models)."
 }

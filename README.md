@@ -131,7 +131,7 @@ vocabulary, 2048 positions) trained on the TinyStories dataset of short
 children's stories. The checkpoint and dataset are research releases by Ronen
 Eldan and Yuanzhi Li ([Eldan & Li, 2023, "TinyStories: How Small Can
 Language Models Be and Still Speak Coherent English?"](https://arxiv.org/abs/2305.07759));
-`meta.json` records the license as stated on the model card. Check the
+`meta.json` records the licensing situation honestly: the upstream model card carries **no license field** (checked 2026-08-22), so redistribution rights for these weights are unresolved until the author confirms them; the dataset license (CDLA-Sharing-1.0 §3.5) imposes no obligations on trained models. Check the
 upstream card before redistributing under different terms.
 
 The files are committed directly in git (no LFS): 7.5 MB is small enough, and
