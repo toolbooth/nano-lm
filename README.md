@@ -167,6 +167,20 @@ That dependency belongs to your app, not to this package, which has **zero
 runtime dependencies**. (`tools/` keeps the checkpoint's `tokenizer.json` etc.
 out of git; they are only needed to regenerate the fixture.)
 
+If your deployment must not contact huggingface.co at runtime (school
+networks, content filters), self-host the two tokenizer files next to the
+weights and construct the tokenizer directly — the essay does this
+(`public/tokenizers/gpt2/`, 2.1 MB: `tokenizer.json` 2,107,653 bytes +
+`tokenizer_config.json` 234 bytes, identical to `Xenova/gpt2`):
+
+```ts
+import { GPT2Tokenizer } from "@huggingface/transformers";
+const [json, config] = await Promise.all(
+  ["tokenizer.json", "tokenizer_config.json"].map((f) => fetch(`/tokenizers/gpt2/${f}`).then((r) => r.json()))
+);
+const tok = new GPT2Tokenizer(json, config); // same ids as AutoTokenizer.from_pretrained("Xenova/gpt2")
+```
+
 ## Known semantics
 
 Deliberate behaviours you should know about before building on this package:
