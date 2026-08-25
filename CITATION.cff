@@ -30,8 +30,8 @@ keywords:
   - in-browser inference
   - machine learning education
 license: MIT
+doi: 10.5281/zenodo.22089053
 # TODO before public launch:
 #   - settle the package name (see NAMING.md) and update `title`
 #   - add `repository-code` / `url` once the repo is public
-#   - add `doi` from Zenodo after cutting a release
 #   - add `preferred-citation` pointing at the essay's companion paper when it exists

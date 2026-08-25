@@ -1,5 +1,7 @@
 # nano-lm
 
+[![DOI](https://zenodo.org/badge/1342706368.svg)](https://zenodo.org/badge/latestdoi/1342706368)
+
 An **auditable GPT-Neo forward pass in dependency-free TypeScript**, bundled
 with the 7.5 MB TinyStories-1M checkpoint. Feed it token ids; get back the
 next-token logits, every layer's per-head attention weights, and the residual
