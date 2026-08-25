@@ -12,10 +12,11 @@ interactive essay in which readers type a sentence and watch a real language
 model — this one — tokenize, embed, attend and gamble on the next word, in
 the browser.
 
-> **Status: pre-release.** This package is `private` and not yet published.
+> **Status: pre-release.** This package is not yet published to npm.
 > `nano-lm` is the working name — see [NAMING.md](./NAMING.md) for the
-> candidates and their npm availability. The license will be chosen before
-> the open-source release.
+> candidates and their npm availability. The code is MIT-licensed; the model
+> weights are redistributed from an upstream research release and are NOT
+> under the MIT license — see "Weights" below and the note in LICENSE.
 
 ## Why
 

@@ -1,6 +1,7 @@
 {
   "name": "nano-lm",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "An auditable GPT-Neo forward pass in dependency-free TypeScript: logits, per-head attention, hidden states and embedding neighbours from a bundled 7.5 MB TinyStories-1M checkpoint, token-exact against the reference implementation.",
   "author": "Shangyan Shen <shenshangyan2001@gmail.com>",
   "private": true,

@@ -29,9 +29,9 @@ keywords:
   - TypeScript
   - in-browser inference
   - machine learning education
+license: MIT
 # TODO before public launch:
 #   - settle the package name (see NAMING.md) and update `title`
 #   - add `repository-code` / `url` once the repo is public
 #   - add `doi` from Zenodo after cutting a release
-#   - add `license` after OSS approval clears
 #   - add `preferred-citation` pointing at the essay's companion paper when it exists
